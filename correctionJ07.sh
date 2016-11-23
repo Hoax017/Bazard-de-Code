@@ -1,4 +1,4 @@
-NAME="patata";
+NAME="atoul";
 
 cd /tmp;
 git clone vogsphere@vogsphere.42.fr:intra/2016/activities/42_piscine_c_formation_piscine_php_day_07/amaitre ${NAME};
